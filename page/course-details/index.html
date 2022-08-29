@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../../public/css/default.css">
+  <link rel="stylesheet" href="./styles.css">
+  
+  <script src="./script.js" type="module" defer></script>
+  <title>ImproveTech | Detalhes</title>
+</head>
+
+<body class="blue-gradient">
+
+  <header class="white-header">
+    <div class="brand flex-center">
+      <a href="/">
+        <h1>Ianes<span class="green-text">Tech</span></h1>
+      </a>
+    </div>
+
+    <nav class="header-nav">
+      <ul class="flex-center">
+        <li><a href="/page/cadastro/" class="active-square-nav-button square-nav-button">Cadastro</a></li>
+        <li><a href="/page/login/" class="active-square-nav-button square-nav-button">Login</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="course-details-card flex-col-between">
+    <img src="/" data-js="thumbnail">
+    <h2 class="title-1" data-js="title">{{TITLE}}</h2>
+    <h3 class="title-3 green-text">GRATUITO!</h3>
+    <button id="register" class="btn active-square-nav-button square-nav-button blue-gradient light-text">INSCREVA-SE</button>
+    <ul>
+      <li>Curso 100% online</li>
+      <li>Certificado válido em todo Brasil</li>
+    </ul>
+  </div>
+
+  <main class="flex-col-start section-wrapper">
+    <section class="flex-col-start section-content-2">
+      <h3 class="title-2">Curso online de</h3>
+      <h2 class="title-1" data-js="title">{{TITLE}}</h2>
+      <p class="orange-box-text">Início imediato</p>
+      <p class="dark-p">Cursos gratuitos, certificados válidos em todo o território nacional e uma plataforma disponível
+        para você 24 horas por dia.</p>
+
+      <hr class="blue-hr">
+
+      <div class="course-content-list">
+        <h5 class="title-3">Conteúdo programatico</h5>
+        <ul data-js="grid">
+          <li>{{LIST ITEM}}</li>
+          <li>{{LIST ITEM}}</li>
+          <li>{{LIST ITEM}}</li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+
+  <footer class="blue-gradient flex-col-center">
+    <div class="brand flex-center">
+      <h2>Ianes<span class="green-text">Tech</span></h2>
+    </div>
+
+
+    <nav class="header-nav">
+      <ul class="flex-col-center">
+        <li><a href="/" class="active-square-nav-button square-nav-button">Inicio</a></li>
+        <li><a href="/page/about/" class="active-square-nav-button square-nav-button">Sobre</a></li>
+        <li><a href="/page/certificates/" class="active-square-nav-button square-nav-button">Certificados</a></li>
+        <li><a href="/page/home/" class="active-square-nav-button square-nav-button">Meus cursos</a></li>
+      </ul>
+    </nav>
+
+    <p>All rights reserved &copy;</p>
+  </footer>
+
+</body>
+
+</html>

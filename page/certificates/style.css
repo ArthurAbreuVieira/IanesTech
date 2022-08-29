@@ -1,0 +1,48 @@
+@import url("../../public/css/default.css");
+
+main {
+  min-height: 100vh;
+  padding: 0;
+}
+
+#block {
+  /* margin-top: 50px; */
+  background-color: #ddd;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  height: fit-content;
+  width: 70%;
+}
+
+table {
+  width: 100%;
+  height: 100%;
+}
+
+tr:nth-child(odd) {
+  background-color: #0001;
+}
+tr {
+  border: 2px solid black;
+}
+
+th {
+  height: 30px;
+  color: #fff;
+}
+
+td {
+  border-bottom: 1px solid black;
+  padding: 10px 0;
+  color: #000;
+}
+
+td a {
+  width: 200px;
+}
+
+button {
+  width: 60%;
+  height: 30px;
+  margin: 0 !important;
+}

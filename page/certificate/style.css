@@ -1,0 +1,48 @@
+@import url("../../public/css/default.css");
+
+main {
+  min-height: 100vh;
+  padding: 0;
+}
+
+#block {
+  /* margin-top: 50px; */
+  background-color: #ddd;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  height: fit-content;
+  width: 70%;
+}
+
+button {
+  width: 60%;
+  height: 30px;
+  margin: 0 !important;
+}
+
+canvas {
+  border: 2px solid #000;
+}
+
+.link-button {
+  width: 250px;
+  background-color: darkblue;
+  line-height: 50px;
+  margin: 25px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: all 200ms ease-in-out;
+}
+
+.link-button:hover {
+  transform: scale(1.1);
+  box-shadow: -2px -2px 15px var(--green), 2px 2px 15px var(--blue);
+}
+
+.link-button img {
+  width: 50px;
+  margin-right: 10px;
+}

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+
+  <script src="./script.js" type="module" defer></script>
+  <title>Avaliação</title>
+</head>
+
+<body class="blue-gradient">
+
+  <header>
+    <div class="brand flex-center">
+      <a href="/">
+        <h1>Ianes<span class="green-text">Tech</span></h1>
+      </a>
+    </div>
+
+    <nav class="header-nav">
+      <ul class="flex-center">
+        <li><a href="/" class="square-nav-button">Inicio</a></li>
+        <li><a href="/page/certificates/" class="square-nav-button">Certificados</a></li>
+        <li><a href="/page/home/" class="square-nav-button">Meus cursos</a></li>
+        <li><button class="square-nav-button" data-js="logoff">Sair</button></li>
+      </ul>
+    </nav>
+  </header>
+
+
+  <main class="flex-col-center">
+    <div class="current-course flex-col-around" data-js="card">
+      <h2 data-js="title">{{TITLE}}</h2>
+      <p>Tentativa atual • <span data-js="attempt">{{ATTEMPT}}</span></p>
+    </div>
+
+    <section id="block" class="flex-col-center">
+      <div class="box">
+        <div id="questions-container"></div>
+        <nav class="question-nav">
+          <button class="pink-box-text" data-js="nav-button" data-nav="prev">Anterior</button>
+          <button class="pink-box-text" data-js="nav-button" data-nav="next">Proxima</button>
+          <button class="green-box-text" data-js="nav-button" data-nav="finish">Finalizar</button>
+        </nav>
+      </div>
+   </section>
+  </main>
+
+</body>
+
+</html>

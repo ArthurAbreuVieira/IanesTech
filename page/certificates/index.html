@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Certificado</title>
+  <script src="../../index.js" type="module" defer></script>
+  <script src="script.js" type="module" defer></script>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body class="blue-gradient flex-col-between">
+
+  <header class="white-header">
+    <div class="brand flex-center">
+      <a href="/">
+        <h1>Ianes<span class="green-text">Tech</span></h1>
+      </a>
+    </div>
+
+    <nav class="header-nav">
+      <ul class="flex-center">
+        <li><a href="/" class="active-square-nav-button square-nav-button">Inicio</a></li>
+        <li><a href="/page/about/" class="active-square-nav-button square-nav-button">Sobre</a></li>
+        <li><a href="/page/certificates/" class="active-square-nav-button square-nav-button">Certificados</a></li>
+        <li><a href="/page/home/" class="active-square-nav-button square-nav-button">Meus cursos</a></li>
+        <li><button class="active-square-nav-button square-nav-button" data-js="logoff">Sair</button></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="section-wrapper flex-col-j-start">
+    <p class="dark-text title-3" data-js="name">${name}</p>
+    <p class="dark-text title-2">Aqui estão seus certificados</p>
+
+    <section id="block" class="flex-col-center">
+      <table cellspacing="0">
+        <thead class="blue-green-gradient">
+          <tr>
+            <th>Curso</th>
+            <th>Data de Conclusão</th>
+            <th>Download</th>
+          </tr>
+        </thead>
+        <tbody align="center"></tbody>
+      </table>
+    </section>
+  </main>
+
+  <footer class="blue-gradient flex-col-center">
+    <div class="brand flex-center">
+      <h2>Ianes<span class="green-text">Tech</span></h2>
+    </div>
+
+
+    <nav class="header-nav">
+      <ul class="flex-col-center">
+        <li><a href="/" class="active-square-nav-button square-nav-button">Inicio</a></li>
+        <li><a href="/page/about/" class="active-square-nav-button square-nav-button">Sobre</a></li>
+        <li><a href="/page/certificates/" class="active-square-nav-button square-nav-button">Certificados</a></li>
+        <li><a href="/page/home/" class="active-square-nav-button square-nav-button">Meus cursos</a></li>
+      </ul>
+    </nav>
+
+    <p>All rights reserved &copy;</p>
+  </footer>
+
+</body>
+</html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  
+  <script src="./script.js" type="module" defer></script>
+  <title>Curso</title>
+</head>
+
+<body>
+
+  <header class="white-header">
+    <div class="brand flex-center">
+      <a href="/">
+        <h1>Ianes<span class="green-text">Tech</span></h1>
+      </a>
+    </div>
+
+    <nav class="header-nav">
+      <ul class="flex-center">
+        <li><a href="/" class="active-square-nav-button square-nav-button">Inicio</a></li>
+        <li><a href="/page/about/" class="active-square-nav-button square-nav-button">Sobre</a></li>
+        <li><a href="/page/certificates/" class="active-square-nav-button square-nav-button">Certificados</a></li>
+        <li><a href="/page/home/" class="active-square-nav-button square-nav-button">Meus cursos</a></li>
+        <li><button class="active-square-nav-button square-nav-button" data-js="logoff">Sair</button></li>
+      </ul>
+    </nav>
+  </header>
+
+
+  <main class="flex-col-start section-wrapper transparent-bg">
+    <div class="course-header blue-green-gradient">
+      <h2 class="title-3" data-js="title">{{TITLE}}</h2>
+    </div>
+    <nav class="tabs flex-around">
+      <button class="tab active-tab" data-tab="classes">Aulas</button>
+      <button class="tab" data-tab="test">Avaliação</button>
+      <button class="tab" data-tab="details">Detalhes</button>
+    </nav>
+
+    <section id="classes" data-js="tab-section" class="flex-col-start section-content">
+      <p class="title-2">Lista de aulas</p>
+
+      <table class="class-table"></table>
+    </section>
+
+    <section id="test" data-js="tab-section" class="flex-col-j-start section-content">
+      <img src="../../public/img/lock.jpg">
+      <p class="title-2">Você precisa assistir todas as aulas para realizar o teste</p>
+      <button class="btn large-btn purple-gradient" data-js="show-classes">Assistir aulas</button>
+    </section>
+
+    <section id="details" data-js="tab-section" class="flex-col-start section-content">
+      <p class="title-2" data-js="title">Curso: {{TITLE}}</p>
+      <p class="title-2">Grade curricular:</p>
+      <ul data-js="grid">
+        <li>{{GRID}}</li>
+        <li>{{GRID}}</li>
+        <li>{{GRID}}</li>
+      </ul>
+      <img src="../../public/img/html.png" data-js="thumbnail">
+    </section>
+
+  </main>
+
+</body>
+
+</html>
