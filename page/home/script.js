@@ -18,7 +18,7 @@ if (userCourses.length > 0) {
     if (!c.finished) {
       courseContainer.innerHTML += `
         <div class="current-course">
-          <a href="/page/course/?id=${courseData.id}" class="flex-col-around">
+          <a href="/page/course/index.html?id=${courseData.id}" class="flex-col-around">
             <h2>${courseData.title}</h2>
             <p>Progresso • ${progress}%</p>
           </a>
@@ -39,5 +39,5 @@ if(!courseContainer.innerHTML) {
     </div>
   `;
 
-  courseContainer.insertAdjacentHTML("afterend", '<a href="/page/certificates/" class="pink-box-text">Meus Certificados</a>');
+  courseContainer.insertAdjacentHTML("afterend", '<a href="/page/certificates/index.html" class="pink-box-text">Meus Certificados</a>');
 }

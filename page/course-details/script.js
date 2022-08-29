@@ -11,8 +11,8 @@ if(user.checkUserLogin()) {
   const headerNav = document.querySelector("header nav ul");
   headerNav.innerHTML = `
     <li><a href="/" class="active-square-nav-button square-nav-button">Inicio</a></li>
-    <li><a href="/page/certificates/" class="active-square-nav-button square-nav-button">Certificados</a></li>
-    <li><a href="/page/home/" class="active-square-nav-button square-nav-button">Meus cursos</a></li>
+    <li><a href="/page/certificates/index.html" class="active-square-nav-button square-nav-button">Certificados</a></li>
+    <li><a href="/page/home/index.html" class="active-square-nav-button square-nav-button">Meus cursos</a></li>
     <li><button class="active-square-nav-button square-nav-button" data-js="logoff">Sair</button></li>
   `;
   const logoffButton = document.querySelector("[data-js=logoff]");
@@ -34,7 +34,7 @@ const registerButton = document.getElementById("register");
 registerButton.addEventListener("click", () => {
   const loggedEmail = user.getLoggedEmail();
 
-  if(!loggedEmail) window.location = "/page/login/";
+  if(!loggedEmail) window.location = "/page/login/index.html";
 
   const userData = user.get(loggedEmail);
   
@@ -49,5 +49,5 @@ registerButton.addEventListener("click", () => {
   if(!userData.courses.some(c => c.id === courseId)) userData.courses.push(courseData);
   user.set(userData);
 
-  window.location = `/page/home/`;
+  window.location = `/page/home/index.html`;
 });

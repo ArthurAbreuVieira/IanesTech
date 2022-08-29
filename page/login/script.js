@@ -23,6 +23,6 @@ function createError(msg) {
 submit.addEventListener("click", e => {
   e.preventDefault();
   
-  if(user.login({email: email.value, password: password.value})) window.location = "/page/home";
+  if(user.login({email: email.value, password: password.value})) window.location = "/page/home/index.html";
   else createError("Dados inválidos!");
 });

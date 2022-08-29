@@ -1,6 +1,6 @@
 import user from "../../public/js/user.js";
 
-if(user.checkUserLogin()) window.location = "/page/home/"
+if(user.checkUserLogin()) window.location = "/page/home/index.html"
 
 const submit = document.getElementById("submit");
 const name = document.getElementById("name");
@@ -43,7 +43,7 @@ submit.addEventListener("click", e => {
     const container = document.getElementById("block");
     container.innerHTML = `
       <p>Cadastro realizado</p>
-      <a class="square-nav-button active-square-nav-button" href="/page/login/">Fazer login</a>
+      <a class="square-nav-button active-square-nav-button" href="/page/login/index.html">Fazer login</a>
     `;
     container.classList.add("success");
   }

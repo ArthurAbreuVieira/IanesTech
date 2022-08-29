@@ -11,7 +11,7 @@ if(!user.checkUserLogin()) window.location = "/";
 const userData = user.get(user.getLoggedEmail());
 const userCourse = userData.courses.filter(c => c.id === courseId)[0];
 
-if(!userCourse || !userCourse.finished) window.location = "/page/certificates/";
+if(!userCourse || !userCourse.finished) window.location = "/page/certificates/index.html";
 
 
 const certificate = document.getElementById("certificate");

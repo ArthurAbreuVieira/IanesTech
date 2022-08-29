@@ -19,7 +19,7 @@ userData.courses.forEach(c => {
       <tr>
         <td>${courseData.title}</td>
         <td>${c.conclusion}</td>
-        <td><a href="/page/certificate/?course=${c.id}" target="_blank" class="btn blue-gradient">Ver Certificado</a></td>
+        <td><a href="/page/certificate/index.html?course=${c.id}" target="_blank" class="btn blue-gradient">Ver Certificado</a></td>
       </tr>
     `;
 });
@@ -28,7 +28,7 @@ if (!table.innerHTML)
   table.innerHTML += `
     <tr>
       <td colspan="2" align="left" style="padding-left:10px">Você ainda não tem nenhum certificado</td>
-      <td><a href="/page/home/" class="btn blue-gradient">Meus cursos</a></td>
+      <td><a href="/page/home/index.html" class="btn blue-gradient">Meus cursos</a></td>
     </tr>
   `;
 
