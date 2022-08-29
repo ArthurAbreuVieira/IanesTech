@@ -76,7 +76,7 @@ tabs.forEach(tab => {
                 <li>Ao ser aprovado o curso será finalizado e um certificado será emitido</li>
               </ul>
 
-              <a class="square-nav-button blue-green-gradient" href="/page/test/index.html?course=${courseId}">Iniciar teste</a>
+              <a class="square-nav-button blue-green-gradient" href="/page/test/?course=${courseId}">Iniciar teste</a>
             </div>
           </div>
         `;

@@ -10,8 +10,8 @@ if(user.checkUserLogin()) {
   const headerNav = document.querySelector("header nav ul");
   headerNav.innerHTML = `
     <li><a href="/" class="square-nav-button">Inicio</a></li>
-    <li><a href="/page/certificates/index.html" class="square-nav-button">Certificados</a></li>
-    <li><a href="/page/home/index.html" class="square-nav-button">Meus cursos</a></li>
+    <li><a href="/page/certificates/" class="square-nav-button">Certificados</a></li>
+    <li><a href="/page/home/" class="square-nav-button">Meus cursos</a></li>
     <li><button class="square-nav-button" data-js="logoff">Sair</button></li>
   `;
   const logoffButton = document.querySelector("[data-js=logoff]");

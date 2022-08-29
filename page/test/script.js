@@ -15,7 +15,7 @@ if(userCourse.attempts <= 0) {
   userCourse.watched = [];
   userData.courses = [...userData.courses.filter(c => c.id !== userCourse.id), userCourse];
   user.set(userData);
-  window.location = `/page/course/index.html?id=${courseId}`;
+  window.location = `/page/course/?id=${courseId}`;
 } else {
   userCourse.attempts -= 1;
   userData.courses = [...userData.courses.filter(c => c.id !== userCourse.id), userCourse];
@@ -133,7 +133,7 @@ function finish() {
       <p class="title-3">Parabéns! você foi aprovado!</p>
       <img src="../../public/img/pass.png" width="40%"/>
       <p class="dark-text">Você acertou <span class="green-text">${score}%</span> da avaliação</p>
-      <a class="btn btn-large blue-gradient" href="/page/certificate/index.html?course=${courseId}">Ver meu certificado</a>
+      <a class="btn btn-large blue-gradient" href="/page/certificate/?course=${courseId}">Ver meu certificado</a>
     `;
   } else {
     if(userCourse.attempts <= 0) {
@@ -148,7 +148,7 @@ function finish() {
       <img src="../../public/img/fail2.png" />
       <p class="dark-text">Você acertou <span class="green-text">${score}%</span> da avaliação</p>
       <p class="dark-text">É necessário acertar pelo menos <span style="color: hotpink;font-weight:bold">70%</span> do total para ser aprovado</p>
-      <a class="btn btn-large blue-gradient" href="/page/course/index.html?id=${courseId}">Voltar ao curso</a>
+      <a class="btn btn-large blue-gradient" href="/page/course/?id=${courseId}">Voltar ao curso</a>
     `;
   }
 
